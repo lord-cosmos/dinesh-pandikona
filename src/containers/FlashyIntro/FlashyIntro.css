@@ -1,0 +1,28 @@
+/* FlashyIntro.css */
+.flashy-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffff;
+  border-radius: 10px;
+}
+
+.intro-title {
+  color: #3498db;
+  font-style: italic;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.intro-text {
+  color: #333;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.intro-text:last-child {
+  margin-bottom: 0;
+}

@@ -1,24 +1,17 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { Container, Typography } from "@mui/material";
+import TopSection from "./containers/TopSection";
+import ParallaxHeader from "./containers/ParallaxHeader/ParallaxHeader";
+import { ParallaxProvider } from "react-scroll-parallax";
+import FlashyIntro from "./containers/FlashyIntro/FlashyIntro";
+import AnimatedBackground from "./components/AnimatedBackground";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <TopSection />
+      <FlashyIntro />
+      <AnimatedBackground />
+    </Container>
   );
 }
 
