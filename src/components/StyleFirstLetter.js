@@ -6,15 +6,16 @@ import theme from "../theme";
 const CapitalizedText = styled("div")({
   textTransform: "capitalize",
   display: "inline",
-  color: "rgb(246, 59, 59)",
   fontSize: "32px",
 });
 
-const StyleFirstLetter = ({ content }) => {
-  // Capitalize the first letter of the content
+const StyleFirstLetter = ({ content, color }) => {
   const capitalizedContent = content.charAt(0).toUpperCase() + content.slice(1);
-
-  return <CapitalizedText>{capitalizedContent}</CapitalizedText>;
+  return (
+    <CapitalizedText sx={{ color: color }}>
+      {capitalizedContent}
+    </CapitalizedText>
+  );
 };
 
 export default StyleFirstLetter;

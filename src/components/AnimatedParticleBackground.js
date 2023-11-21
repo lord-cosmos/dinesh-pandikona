@@ -1,14 +1,14 @@
 import React from "react";
 import ParticleBackground from "react-particle-backgrounds";
 
-const AnimatedBackground = function () {
+const AnimatedParticleBackground = function () {
   const settings = {
     canvas: {
-      useBouncyWalls: true
+      useBouncyWalls: false,
     },
     particle: {
-      particleCount: 100,
-      color: "#d68c38",
+      particleCount: 50,
+      color: "#000",
       minSize: 1,
       maxSize: 5,
     },
@@ -16,7 +16,7 @@ const AnimatedBackground = function () {
       directionAngle: 0,
       directionAngleVariance: 30,
       minSpeed: 0.2,
-      maxSpeed: 4,
+      maxSpeed: 1,
     },
     opacity: {
       minOpacity: 0,
@@ -27,4 +27,4 @@ const AnimatedBackground = function () {
 
   return <ParticleBackground settings={settings}></ParticleBackground>;
 };
-export default AnimatedBackground;
+export default AnimatedParticleBackground;

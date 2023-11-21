@@ -12,7 +12,7 @@ function ProfileImage() {
           borderRadius: "50%",
           width: "400px",
           height: "400px",
-          border: "5px solid orange",
+          border: "5px solid black",
         }}
         alt="Aatik Tasneem"
       />
