@@ -1,25 +1,25 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { Container, Typography } from "@mui/material";
+import TopSection from "./containers/TopSection";
+import FlashyIntro from "./containers/FlashyIntro/FlashyIntro";
+import AnimatedBackground from "./components/AnimatedParticleBackground";
+import AnimatedBanner from "./components/AnimatedBanner";
+import CssBaseline from "@mui/material/CssBaseline";
+import ScrollAnimatedBorders from "./components/ColorBorders";
+// import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CssBaseline />
+      <Container>
+        <Container sx={{ backgroundColor: "lightcyan", height: "500vh" }}>
+          <AnimatedBanner />
+        </Container>
+        <ScrollAnimatedBorders />
+        {/* <h1 className="open" children="Dinesh Pandikona"></h1> */}
+      </Container>
+    </>
   );
-}
+};
 
 export default App;
