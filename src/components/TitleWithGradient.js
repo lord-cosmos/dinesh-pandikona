@@ -4,16 +4,22 @@ function TitleWithGradient({
   content = "Dinesh Pandikona",
   from = "pink",
   to = "white",
+  fontSize = "36px",
+  otherStyles,
 }) {
   const gradientStyle = {
-    fontSize: "36px",
+    fontSize: `${fontSize}`,
     fontWeight: "bold",
-    backgroundImage: `linear-gradient(to right, ${from},blue, ${to})`,
+    backgroundImage: `linear-gradient(to right, ${from},#EFDCD8, ${to})`,
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
   };
 
-  return <div style={gradientStyle}>{content}</div>;
+  return (
+    <div style={gradientStyle} className={otherStyles}>
+      {content}
+    </div>
+  );
 }
 
 export default TitleWithGradient;
