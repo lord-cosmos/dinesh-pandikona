@@ -2,7 +2,7 @@ import React from "react";
 import "./ParallaxHeader.css";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import ss from "../../assets/ss.svg";
-import profilepic from "../../assets/Edit-pic-0.png";
+import profilepic from "../../assets/Edit-pic-1.png";
 const ParallaxHeader = () => {
   const imageUrl =
     "https://images.pexels.com/photos/3293148/pexels-photo-3293148.jpeg?auto=compress&cs=tinysrgb&w=600";
@@ -19,11 +19,11 @@ const ParallaxHeader = () => {
       <ParallaxLayer offset={0} className="center">
         <img src={profilepic} alt="" />
       </ParallaxLayer>
-      <ParallaxLayer offset={1} className="center">
-        <div>Hello world</div>
+      <ParallaxLayer offset={2} className="right">
+        <div>2222222222</div>
       </ParallaxLayer>
-      <ParallaxLayer offset={2} className="center">
-        <div>Hello</div>
+      <ParallaxLayer offset={1} className="center">
+        <div>1</div>
       </ParallaxLayer>
     </Parallax>
   );
