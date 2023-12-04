@@ -5,20 +5,15 @@ import AnimatedBackground from "./components/AnimatedParticleBackground";
 import AnimatedBanner from "./components/AnimatedBanner";
 import CssBaseline from "@mui/material/CssBaseline";
 import ScrollAnimatedBorders from "./components/ColorBorders";
+import ParallaxHeader from "./containers/ParallaxHeader/ParallaxHeader";
 // import "./App.css";
 
 const App = () => {
   return (
     <>
       <CssBaseline />
-      <Container>
-        <Container sx={{ backgroundColor: "lightcyan", height: "200vh" }}>
-          <AnimatedBanner />
-        </Container>
-        <ScrollAnimatedBorders />
-
-        {/* <h1 className="open" children="Dinesh Pandikona"></h1> */}
-      </Container>
+      <ParallaxHeader />
+      <ScrollAnimatedBorders />
     </>
   );
 };

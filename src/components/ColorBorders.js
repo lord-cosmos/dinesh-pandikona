@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 
 const LeftBorder = ({ scrollY }) => {
   const classes = useStyles();
-  let ratio = scrollY / 50;
+  let ratio = scrollY / 25;
   ratio = ratio > 25 ? 25 : ratio;
   const springProps = useSpring({
     borderRightWidth: `${ratio}px`, // Adjust the scroll range and width
@@ -36,7 +36,7 @@ const LeftBorder = ({ scrollY }) => {
 
 const RightBorder = ({ scrollY }) => {
   const classes = useStyles();
-  let ratio = scrollY / 50;
+  let ratio = scrollY / 25;
   ratio = ratio > 25 ? 25 : ratio;
   const springProps = useSpring({
     borderLeftWidth: `${ratio}px`, // Adjust the scroll range and width
