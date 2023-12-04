@@ -12,10 +12,11 @@ const App = () => {
     <>
       <CssBaseline />
       <Container>
-        <Container sx={{ backgroundColor: "lightcyan", height: "500vh" }}>
+        <Container sx={{ backgroundColor: "lightcyan", height: "200vh" }}>
           <AnimatedBanner />
         </Container>
         <ScrollAnimatedBorders />
+
         {/* <h1 className="open" children="Dinesh Pandikona"></h1> */}
       </Container>
     </>
