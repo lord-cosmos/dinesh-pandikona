@@ -7,24 +7,26 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     top: 0,
     left: 0,
-    height: "100%",
-    borderRight: "50px solid orange", // Adjust color and width as needed
+    height: "100vh",
+    borderRight: "2px solid #FF671F", // Adjust color and width as needed
     zIndex: 999, // Ensure it's above other content
   },
   rightBorder: {
     position: "fixed",
     top: 0,
     right: 0,
-    height: "100%",
-    borderLeft: "50px solid green", // Adjust color and width as needed
+    height: "100vh",
+    borderLeft: "2px solid #046A38", // Adjust color and width as needed
     zIndex: 999, // Ensure it's above other content
   },
 }));
 
 const LeftBorder = ({ scrollY }) => {
   const classes = useStyles();
+  let ratio = scrollY / 50;
+  ratio = ratio > 25 ? 25 : ratio;
   const springProps = useSpring({
-    borderRightWidth: `${scrollY / 5}px`, // Adjust the scroll range and width
+    borderRightWidth: `${ratio}px`, // Adjust the scroll range and width
   });
 
   return (
@@ -34,8 +36,10 @@ const LeftBorder = ({ scrollY }) => {
 
 const RightBorder = ({ scrollY }) => {
   const classes = useStyles();
+  let ratio = scrollY / 50;
+  ratio = ratio > 25 ? 25 : ratio;
   const springProps = useSpring({
-    borderLeftWidth: `${scrollY / 5}px`, // Adjust the scroll range and width
+    borderLeftWidth: `${ratio}px`, // Adjust the scroll range and width
   });
 
   return (
