@@ -1,10 +1,6 @@
-.container-body {
-  height: 9000px;
-}
-.spinner {
-  width: 140px;
-  height: 140px;
-  background-color: cornflowerblue;
-  margin: auto;
-  margin-top: 55%;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
 }
