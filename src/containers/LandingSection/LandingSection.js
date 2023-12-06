@@ -1,9 +1,9 @@
 import React from "react";
 import "./LandingSection.css";
-import { Box, display } from "@mui/system";
+import { Box, display, fontFamily } from "@mui/system";
 import { Typography } from "@mui/material";
 import StyleFirstLetter from "../../components/StyleFirstLetter";
-import image from "../../assets/Edit-pic-1.png";
+import image from "../../assets/p5-secondary.png";
 import { makeStyles } from "@mui/styles";
 import TitleWithGradient from "../../components/TitleWithGradient";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -12,11 +12,12 @@ import EmailIcon from "@mui/icons-material/Email";
 import UnderlinedContent from "../../components/UnderlinedContent";
 import { hover } from "@testing-library/user-event/dist/hover";
 import logoStackoverflow from "../../assets/logo-stackoverflow.png";
+import theme from "../../theme";
 
 const useStyles = makeStyles((theme) => ({
   container: {
     height: "100vh",
-    backgroundColor: "white",
+    backgroundColor: theme.palette.primary.main,
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -52,6 +53,8 @@ const useStyles = makeStyles((theme) => ({
 const GITHUB_LINK = "https://github.com/lord-cosmos";
 const LINKEDIN_LINK = "https://www.linkedin.com/in/dinesh-pandikona/";
 const MAIL_LINK = "mailto:neupersonalusage@gmail.com";
+const primary = theme.palette.primary.main;
+const secondary = theme.palette.secondary.main;
 
 function LandingSection() {
   const classes = useStyles();
@@ -64,14 +67,17 @@ function LandingSection() {
       />
 
       <Typography className={classes.flashyIntro} variant="h8">
-        <StyleFirstLetter content="H" color="#000"></StyleFirstLetter>ey there,
-        coding connoisseurs and recruiter extraordinares!
+        <StyleFirstLetter
+          content="H"
+          color={theme.palette.secondary.main}
+        ></StyleFirstLetter>
+        ey there, coding connoisseurs and recruiter extraordinares!
         <TitleWithGradient
           otherStyles={classes.title}
           content="I'm DINESH PANDIKONA"
           fontSize="16px"
-          from="black"
-          to="#3d3547"
+          // from={secondary}
+          // to={secondary}
         />{" "}
         your friendly neighborhood tech wizard with a penchant for turning code
         into poetry. Formerly rocking the tech scene at{" "}
@@ -98,7 +104,7 @@ function LandingSection() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <GitHubIcon />
+          <GitHubIcon sx={{ color: secondary }} />
         </a>
         <a
           className={classes.links}
@@ -106,10 +112,10 @@ function LandingSection() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <LinkedInIcon />
+          <LinkedInIcon sx={{ color: secondary }} />
         </a>
         <a className={classes.links} href={MAIL_LINK}>
-          <EmailIcon />
+          <EmailIcon sx={{ color: secondary }} />
         </a>
         <a className={classes.links} href={MAIL_LINK}>
           <logoStackoverflow />
