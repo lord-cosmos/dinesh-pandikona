@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     top: 0,
     left: 0,
     height: "100vh",
-    borderRight: "2px solid #4831D4", // Adjust color and width as needed
+    borderRight: `1px double ${theme.palette.secondary.main}`, // Adjust color and width as needed
     zIndex: 999, // Ensure it's above other content
   },
   rightBorder: {
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     top: 0,
     right: 0,
     height: "100vh",
-    borderLeft: "2px solid #4831D4", // Adjust color and width as needed
+    borderLeft: `1px double ${theme.palette.secondary.main}`, // Adjust color and width as needed
     zIndex: 999, // Ensure it's above other content
   },
 }));
