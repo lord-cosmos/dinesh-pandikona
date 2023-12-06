@@ -16,9 +16,6 @@ const App = () => {
     <>
       <CssBaseline />
       <LandingSection />
-      <LandingSection />
-      <LandingSection />
-
       <ScrollAnimatedBorders />
     </>
   );
