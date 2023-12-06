@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dineshpandikona/static/css/main.ea145152.css",
-    "main.js": "/dineshpandikona/static/js/main.7930ab2b.js",
-    "static/media/Edit-pic-1.png": "/dineshpandikona/static/media/Edit-pic-1.abed6aef69e415452f5d.png",
-    "static/media/logo-stackoverflow.png": "/dineshpandikona/static/media/logo-stackoverflow.e2c42001135addbad748.png",
-    "index.html": "/dineshpandikona/index.html",
-    "static/media/ss.svg": "/dineshpandikona/static/media/ss.5320ac66e6a7af88b47d489e9f7fdbe5.svg",
-    "main.ea145152.css.map": "/dineshpandikona/static/css/main.ea145152.css.map",
-    "main.7930ab2b.js.map": "/dineshpandikona/static/js/main.7930ab2b.js.map"
+    "main.css": "/dinesh-pandikona/static/css/main.ea145152.css",
+    "main.js": "/dinesh-pandikona/static/js/main.2b1353da.js",
+    "static/media/Edit-pic-1.png": "/dinesh-pandikona/static/media/Edit-pic-1.abed6aef69e415452f5d.png",
+    "static/media/logo-stackoverflow.png": "/dinesh-pandikona/static/media/logo-stackoverflow.e2c42001135addbad748.png",
+    "index.html": "/dinesh-pandikona/index.html",
+    "static/media/ss.svg": "/dinesh-pandikona/static/media/ss.5320ac66e6a7af88b47d489e9f7fdbe5.svg",
+    "main.ea145152.css.map": "/dinesh-pandikona/static/css/main.ea145152.css.map",
+    "main.2b1353da.js.map": "/dinesh-pandikona/static/js/main.2b1353da.js.map"
   },
   "entrypoints": [
     "static/css/main.ea145152.css",
-    "static/js/main.7930ab2b.js"
+    "static/js/main.2b1353da.js"
   ]
 }
