@@ -1,1 +1,10 @@
-#3d3547
+Personally picked  Color : #3d3547
+
+Theme : 1
+primary : #234E70
+seocndary : #FBF8BE
+
+
+Theme :  2
+primary  : #CCF381
+secondary : #4831D4
