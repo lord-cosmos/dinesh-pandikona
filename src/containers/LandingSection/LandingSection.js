@@ -11,6 +11,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import UnderlinedContent from "../../components/UnderlinedContent";
 import { hover } from "@testing-library/user-event/dist/hover";
+import logoStackoverflow from "../../assets/logo-stackoverflow.png";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -43,6 +44,8 @@ const useStyles = makeStyles((theme) => ({
   },
   links: {
     color: "black",
+    width: "30px",
+    height: "auto",
   },
 }));
 
@@ -107,6 +110,9 @@ function LandingSection() {
         </a>
         <a className={classes.links} href={MAIL_LINK}>
           <EmailIcon />
+        </a>
+        <a className={classes.links} href={MAIL_LINK}>
+          <logoStackoverflow />
         </a>
       </Box>
     </Box>
