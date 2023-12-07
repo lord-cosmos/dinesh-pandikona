@@ -13,11 +13,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "contain",
     display: "flex",
     border: "2px solid black",
-    justifyContent: "center",
+    justifyContent: "space-around",
+    alignItems: "center",
   },
   Carousel: {
     width: "auto",
-    height: "50%",
+    // height: "50%",
   },
 }));
 

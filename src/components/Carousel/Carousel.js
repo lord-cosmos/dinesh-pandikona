@@ -43,8 +43,6 @@ function Carousel({ slides = ["slide1", "slide2", "slide3"] }) {
               key={index}
               style={{
                 ...styles,
-                width: "300px",
-                height: "300px",
               }}
               src={slides[index]}
             />
