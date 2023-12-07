@@ -13,11 +13,13 @@ import UnderlinedContent from "../../components/UnderlinedContent";
 import { hover } from "@testing-library/user-event/dist/hover";
 import logoStackoverflow from "../../assets/logo-stackoverflow.png";
 import theme from "../../theme";
+import constellation from "../../assets/endless-constellation.png";
 
 const useStyles = makeStyles((theme) => ({
   container: {
     height: "100vh",
     backgroundColor: theme.palette.primary.main,
+
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -41,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
   flashyIntro: {
     textAlign: "center",
     width: "50vw",
+
     // marginBottom: "16px",
   },
   links: {

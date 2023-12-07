@@ -6,16 +6,19 @@ import AnimatedBanner from "./components/AnimatedBanner";
 import CssBaseline from "@mui/material/CssBaseline";
 import ScrollAnimatedBorders from "./components/ColorBorders";
 import ParallaxHeader from "./containers/ParallaxHeader/ParallaxHeader";
-import { height } from "@mui/system";
+import { Box, height } from "@mui/system";
 // import "./App.css";
 import TitleWithGradient from "./components/TitleWithGradient";
 import LandingSection from "./containers/LandingSection/LandingSection";
+import WorkSection from "./containers/WorkSection/WorkSection";
 
 const App = () => {
   return (
     <>
       <CssBaseline />
       <LandingSection />
+      {/* <ParallaxHeader /> */}
+      <WorkSection />
       <ScrollAnimatedBorders />
     </>
   );
