@@ -11,6 +11,7 @@ import { Box, height } from "@mui/system";
 import TitleWithGradient from "./components/TitleWithGradient";
 import LandingSection from "./containers/LandingSection/LandingSection";
 import WorkSection from "./containers/WorkSection/WorkSection";
+import Carousel from "./components/Carousel/Carousel";
 
 const App = () => {
   return (
