@@ -39,6 +39,22 @@ const useStyles = makeStyles((theme) => ({
 
 function WorkSection() {
   const classes = useStyles();
+  const haid_point = [
+    "Import/Export",
+    "PNG, JPEG, PPM formats supported",
+    "Previews",
+    "Split View",
+    "Filters - Sepia, blur and others",
+    "Color Depth Visualization - Histogram",
+  ];
+  const stack_stats_point = [
+    "Search profiles",
+    "Statistics on profile",
+    "Multiple matching profiles - selection",
+    "Visualizations on Question and Answer tags",
+    "Questions asked",
+    "Answers contributed",
+  ];
   return (
     <Box className={classes.workSection} sx={{ height: "200vh" }}>
       <Typography className={classes.title} variant="h1">
@@ -46,11 +62,21 @@ function WorkSection() {
       </Typography>
       <Box className={classes.Container}>
         <Carousel slides={slides_hadi} className={classes.Carousel} />
-        <ProjectBasicInfo />
+        <ProjectBasicInfo
+          title="HaiD"
+          description={
+            "A image processing application natively built using Java and Swing"
+          }
+          points={haid_point}
+        />
       </Box>
       <Box className={classes.Container}>
         <Carousel slides={slides_stackstats} className={classes.Carousel} />
-        <ProjectBasicInfo />
+        <ProjectBasicInfo
+          title="StackStats"
+          description="A StackOverflow Visualizer built using React.js and Chart.js"
+          points={stack_stats_point}
+        />
       </Box>
     </Box>
   );

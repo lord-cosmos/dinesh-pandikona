@@ -10,27 +10,28 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
 }));
-function ProjectBasicInfo() {
+function ProjectBasicInfo({ title, description, points }) {
   const classes = useStyles();
   return (
     <Box sx={classes.Container}>
       <Typography variant="h2" sx={{ color: "white" }}>
-        HaiD - Image Editing GUI
+        {title}
       </Typography>
       <Typography variant="p" sx={{ color: "white" }}>
-        A image processing application natively built using Java and Swing.
+        {description}
       </Typography>
       <Typography variant="h6" sx={{ color: "white" }}>
         Features
       </Typography>
       <Typography sx={{ marginLeft: "20px", marginTop: "5px", color: "white" }}>
         <ul>
-          <li>Import/Export</li>
-          <li>PNG, JPEG, PPM formats supported</li>
-          <li>Previews</li>
-          <li>Split View</li>
-          <li>Filters - Sepia, blur and others</li>
-          <li>Color Depth Visualization - Histogram</li>
+          {points.map((point, index) => (
+            <li key={index}>
+              <Typography variant="body1" sx={{ color: "white" }}>
+                {point}
+              </Typography>
+            </li>
+          ))}
         </ul>
       </Typography>
       {/* <Button
