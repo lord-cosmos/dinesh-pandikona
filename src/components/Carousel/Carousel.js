@@ -32,9 +32,9 @@ function Carousel({ slides = ["slide1", "slide2", "slide3"] }) {
 
   return (
     <div className="carousel-container">
-      {/* <div className="btn prev" onClick={prevSlide}>
+      <div className="btn prev" onClick={prevSlide}>
         &#10094;
-      </div> */}
+      </div>
       <div className="slides">
         {transitions((styles, index) => {
           return (
@@ -43,6 +43,8 @@ function Carousel({ slides = ["slide1", "slide2", "slide3"] }) {
               key={index}
               style={{
                 ...styles,
+                height: "30rem",
+                width: "40rem",
               }}
               src={slides[index]}
             />
@@ -50,9 +52,9 @@ function Carousel({ slides = ["slide1", "slide2", "slide3"] }) {
         })}
       </div>
 
-      {/* <div className="btn next" onClick={nextSlide}>
+      <div className="btn next" onClick={nextSlide}>
         &#10095;
-      </div> */}
+      </div>
 
       {/* <div className="vector-frame">
         <img src={vectorImg} alt="vector" className="vector" />

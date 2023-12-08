@@ -1,6 +1,10 @@
 import React from "react";
 import { useSpring, animated } from "@react-spring/web";
 import { makeStyles } from "@mui/styles";
+import theme from "../theme";
+
+const primary = theme.palette.primary.main;
+const secondary = theme.palette.secondary.main;
 
 const useStyles = makeStyles((theme) => ({
   leftBorder: {
@@ -22,11 +26,21 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const LeftBorder = ({ scrollY }) => {
+  // Calculate the number of 100vh sections scrolled
+  const sectionsScrolled = Math.floor(scrollY / window.innerHeight);
+
+  // Define an array of colors for each section
+  const colors = [secondary, primary, primary, "yellow"]; // Add more colors as needed
+
+  // Get the color based on the section scrolled
+  const colorIndex = sectionsScrolled % colors.length;
+  const color = colors[colorIndex];
   const classes = useStyles();
   let ratio = scrollY / 25;
   ratio = ratio > 25 ? 25 : ratio;
   const springProps = useSpring({
     borderRightWidth: `${ratio}px`, // Adjust the scroll range and width
+    borderRightColor: color,
   });
 
   return (
@@ -35,11 +49,21 @@ const LeftBorder = ({ scrollY }) => {
 };
 
 const RightBorder = ({ scrollY }) => {
+  // Calculate the number of 100vh sections scrolled
+  const sectionsScrolled = Math.floor(scrollY / window.innerHeight);
+
+  // Define an array of colors for each section
+  const colors = [secondary, primary, primary, "yellow"]; // Add more colors as needed
+
+  // Get the color based on the section scrolled
+  const colorIndex = sectionsScrolled % colors.length;
+  const color = colors[colorIndex];
   const classes = useStyles();
   let ratio = scrollY / 25;
   ratio = ratio > 25 ? 25 : ratio;
   const springProps = useSpring({
     borderLeftWidth: `${ratio}px`, // Adjust the scroll range and width
+    borderLeftColor: color,
   });
 
   return (
