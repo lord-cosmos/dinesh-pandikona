@@ -1,6 +1,6 @@
 import React from "react";
 import "./LandingSection.css";
-import { Box, display, fontFamily } from "@mui/system";
+import { Box, display, fontFamily, height, sizeHeight } from "@mui/system";
 import { Typography } from "@mui/material";
 import StyleFirstLetter from "../../components/StyleFirstLetter";
 import image from "../../assets/p5-secondary.png";
@@ -11,7 +11,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import UnderlinedContent from "../../components/UnderlinedContent";
 import { hover } from "@testing-library/user-event/dist/hover";
-import logoStackoverflow from "../../assets/logo-stackoverflow.png";
+import logoStackoverflow from "../../assets/log-stack.png";
 import theme from "../../theme";
 import constellation from "../../assets/endless-constellation.png";
 
@@ -121,7 +121,7 @@ function LandingSection() {
           <EmailIcon sx={{ color: secondary }} />
         </a>
         <a className={classes.links} href={MAIL_LINK}>
-          <logoStackoverflow />
+          <img src={logoStackoverflow} alt="seo" style={{ height: "24px" }} />
         </a>
       </Box>
     </Box>
